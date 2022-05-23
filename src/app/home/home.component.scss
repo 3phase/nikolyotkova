@@ -2,16 +2,13 @@
     height: 100vh;
     width: 100%;
     background-color: bisque;
-    overflow-y: scroll;
 }
 
 .hz-scroll-container {
     position: relative;
     top: 100px;
     height: 100%;
-    // display: flex;
     vertical-align: middle;
-    overflow-x: scroll;
 }
 
 .item {
@@ -33,18 +30,23 @@
     height: 100%;
     border-radius: 5px;
     counter-increment: gallery-cell;
-    display: flex;
-    vertical-align: middle;
+    margin-right: -80px;
 }
 
 .carousel-cell:nth-child(1) {
-    background: #8c8;
+    background: #f16331;
 }
 .carousel-cell:nth-child(2) {
-    background: #ffcc00;
+    background: #bd2393;
 }
 .carousel-cell:nth-child(3) {
-    background: bisque;
+    background: #0092bd;
+}
+.carousel-cell:nth-child(4) {
+    background: #59c2f0;
+}
+.carousel-cell:nth-child(5) {
+    background: #3ef7e8;
 }
 
 /* cell number */
@@ -52,8 +54,9 @@
     display: block;
     text-align: center;
     content: counter(gallery-cell);
-    font-size: 80px;
+    font-size: 11em;
     color: transparent;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: white;
+    line-height: 100vh;
 }

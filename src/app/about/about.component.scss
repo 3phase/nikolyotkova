@@ -1,0 +1,21 @@
+.header-hero {
+    height: 60vh;
+    background-color: #59c2f0;
+}
+
+.content-pane {
+    min-height: 40vh;
+    width: 60%;
+    margin: 60px auto;
+    text-align: justify;
+    font-weight: 100;
+    color: rgb(34, 34, 34);
+
+    h1 {
+        font-weight: 300;
+    }
+
+    h2 {
+        font-weight: 200;
+    }
+}
