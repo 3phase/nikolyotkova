@@ -1,6 +1,6 @@
 <div *ngIf="project$ | async as project" class="project-{{project.id}}">
     <div class="header-hero"></div>
-    <div class="content-pane">
+    <div *ngIf="project.title || project.description" class="content-pane">
         <h1 class="title">
             {{ project.title }}
         </h1>
@@ -39,6 +39,6 @@
                 </div>
             </div>
         </div>
-
     </div>
+    <img *ngIf="project.endImage" [src]="project.endImage" class="hero-img">
 </div>

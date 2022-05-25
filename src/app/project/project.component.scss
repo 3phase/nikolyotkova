@@ -1,7 +1,11 @@
 @use "../../assets/colors.scss" as *;
 
 $projectOneColor: #06d7a0;
-$projectOneColorContrastText: #fff;
+$projectTwoColor: #aee8e9;
+$projectFourColor: #0091bd;
+$projectFiveColor: #90ebda;
+$projectSixColor: #fc98be;
+$projectEightColor: #0091bd;
 
 .col {
     display: flex;
@@ -14,7 +18,7 @@ $projectOneColorContrastText: #fff;
 }
 
 .header-hero {
-    height: 100px;
+    height: 150px;
 }
 
 .content-pane {
@@ -64,6 +68,7 @@ $projectOneColorContrastText: #fff;
     .color-shape {
         height: 10vh;
         width: 10vh;
+        border-radius: 10vh;
     }
 }
 
@@ -84,14 +89,10 @@ $projectOneColorContrastText: #fff;
     .header-hero {
         background-color: $projectOneColor;
     }
-
-    .color-shape {
-        border-radius: 10vh;
-    }
 }
 .project-2 {
     .header-hero {
-        background-color: $ny-pinkish;
+        background-color: $projectTwoColor;
     }
 }
 .project-3 {
@@ -101,26 +102,36 @@ $projectOneColorContrastText: #fff;
 }
 .project-4 {
     .header-hero {
-        background-color: $ny-light-blue;
+        background-color: $projectFourColor;
     }
 }
 .project-5 {
     .header-hero {
-        background-color: $ny-greenish;
+        background-color: $projectFiveColor;
+    }
+    .hero-img {
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 0;
     }
 }
 .project-6 {
     .header-hero {
-        background-color: $ny-light-blue;
+        background-color: $projectSixColor;
     }
 }
 .project-7 {
     .header-hero {
         background-color: $ny-dark-blue;
     }
+    .hero-img {
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
 }
 .project-8 {
     .header-hero {
-        background-color: $ny-pinkish;
+        background-color: $projectEightColor;
     }
 }

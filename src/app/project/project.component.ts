@@ -5,8 +5,8 @@ import { ProjectService } from './project.service';
 
 export interface IProject {
   id: number;
-  title: string;
-  description: string;
+  title?: string;
+  description?: string;
   heroImg?: string;
   logosDescImg?: string;
   logoDesc?: string;
@@ -15,6 +15,7 @@ export interface IProject {
   projectDate?: string;
   usedPrograms?: string[];
   gallery?: string[];
+  endImage?: string;
 }
 
 @Component({
