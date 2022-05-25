@@ -48,6 +48,15 @@
 .carousel-cell:nth-child(5) {
     background: #3ef7e8;
 }
+.carousel-cell:nth-child(6) {
+    background: #59c2f0;
+}
+.carousel-cell:nth-child(7) {
+    background: #0092bd;
+}
+.carousel-cell:nth-child(8) {
+    background: #bd2393;
+}
 
 .hero-carousel__cell {
     width: 100%;
@@ -62,24 +71,22 @@
 
     p {
         text-align: center;
-        font-size: 11em;
+        font-size: 7em;
         letter-spacing: -9px;
         color: transparent;
-        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-width: 1px;
         -webkit-text-stroke-color: white;
     }
-    
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 900px) {
     .hero-carousel__cell {
         width: 80%;
         padding: 0 5px;
         p {
-            font-size: 4em;
-            letter-spacing: -2px;
+            font-size: 2.1em;
+            letter-spacing: -1px;
             -webkit-text-stroke-width: 1px;
             -webkit-text-stroke-color: white;
-
         }
     }
 }
