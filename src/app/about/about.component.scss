@@ -1,5 +1,5 @@
 .header-hero {
-    height: 60vh;
+    height: 150px;
     background-color: #59c2f0;
 }
 
@@ -27,5 +27,14 @@
     .nikolche-video {
         margin: 60px auto 30px;
         display: block;
+    }
+
+    a {
+        font-size: 1.6em;
+        color: #59c2f0;
+    }
+
+    a:hover {
+        border-bottom: 1px dashed;
     }
 }

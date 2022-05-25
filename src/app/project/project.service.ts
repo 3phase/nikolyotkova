@@ -15,6 +15,7 @@ export class ProjectService {
   }
 
   public getProject(id: string | number) {
+    if (!id) { id = 1; }
     return this.getProjects().pipe(
       // (+) before `id` turns the string into a number
       map((heroes: IProject[]) => heroes.find(hero => hero.id === +id)!)
