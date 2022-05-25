@@ -7,6 +7,14 @@ export interface IProject {
   id: number;
   title: string;
   description: string;
+  heroImg?: string;
+  logosDescImg?: string;
+  logoDesc?: string;
+  colorPalette?: string[];
+  font?: string;
+  projectDate?: string;
+  usedPrograms?: string[];
+  gallery?: string[];
 }
 
 @Component({

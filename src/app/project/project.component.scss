@@ -1,21 +1,35 @@
-@use '../../assets/colors.scss' as *;
+@use "../../assets/colors.scss" as *;
+
+$projectOneColor: #06d7a0;
+$projectOneColorContrastText: #fff;
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    place-content: space-between;
+}
 
 .header-hero {
-    height: 40vh;
+    height: 10vh;
 }
 
 .content-pane {
-    min-height: 40vh;
+    // min-height: 40vh;
     width: 60%;
     margin: 60px auto;
     text-align: justify;
     font-weight: 100;
     color: rgb(34, 34, 34);
     text-align: center;
+    padding: 20px 0;
 
     h1 {
         font-weight: 300;
-        font-size: 3.0em;
+        font-size: 3em;
     }
 
     h1.title {
@@ -33,9 +47,46 @@
     }
 }
 
+.hero-img {
+    width: 70%;
+    display: block;
+    margin: 20px auto;
+}
+
+.color-palette {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    vertical-align: middle;
+    margin: 60px 0;
+
+    .color-shape {
+        height: 10vh;
+        width: 10vh;
+    }
+}
+
+.project-meta {
+    font-size: 1.5em;
+    strong {
+        margin-right: 10px;
+    }
+}
+
+.program-icon {
+    width: 30px;
+    float: left;
+    margin: 0 10px;
+}
+
 .project-1 {
     .header-hero {
-        background-color: $ny-reddish;
+        background-color: $projectOneColor;
+    }
+
+    .color-shape {
+        border-radius: 10vh;
     }
 }
 .project-2 {
@@ -71,10 +122,5 @@
 .project-8 {
     .header-hero {
         background-color: $ny-pinkish;
-    }
-}
-.project-1 {
-    .header-hero {
-        background-color: $ny-reddish;
     }
 }
