@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
-import { ProjectComponent } from './project/project.component';
+import { ProjectsModule } from './project/projects.module';
 
 @NgModule({
   declarations: [
@@ -14,11 +14,11 @@ import { ProjectComponent } from './project/project.component';
     NavbarComponent,
     AboutComponent,
     HomeComponent,
-    ProjectComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ProjectsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,3 +1,5 @@
+@use '../../assets/colors.scss' as *;
+
 .container {
     height: 100vh;
     width: 100%;
@@ -34,28 +36,28 @@
 }
 
 .carousel-cell:nth-child(1) {
-    background: #f16331;
+    background: $ny-reddish;
 }
 .carousel-cell:nth-child(2) {
-    background: #bd2393;
+    background: $ny-pinkish;
 }
 .carousel-cell:nth-child(3) {
-    background: #0092bd;
+    background: $ny-dark-blue;
 }
 .carousel-cell:nth-child(4) {
-    background: #59c2f0;
+    background: $ny-light-blue;
 }
 .carousel-cell:nth-child(5) {
-    background: #3ef7e8;
+    background: $ny-greenish;
 }
 .carousel-cell:nth-child(6) {
-    background: #59c2f0;
+    background: $ny-light-blue;
 }
 .carousel-cell:nth-child(7) {
-    background: #0092bd;
+    background: $ny-dark-blue;
 }
 .carousel-cell:nth-child(8) {
-    background: #bd2393;
+    background: $ny-pinkish;
 }
 
 .hero-carousel__cell {

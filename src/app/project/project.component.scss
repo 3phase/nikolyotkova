@@ -1,6 +1,7 @@
+@use '../../assets/colors.scss' as *;
+
 .header-hero {
     height: 40vh;
-    background-color: #f16331;
 }
 
 .content-pane {
@@ -29,5 +30,51 @@
     p {
         font-size: 1.3em;
         word-spacing: 10px;
+    }
+}
+
+.project-1 {
+    .header-hero {
+        background-color: $ny-reddish;
+    }
+}
+.project-2 {
+    .header-hero {
+        background-color: $ny-pinkish;
+    }
+}
+.project-3 {
+    .header-hero {
+        background-color: $ny-dark-blue;
+    }
+}
+.project-4 {
+    .header-hero {
+        background-color: $ny-light-blue;
+    }
+}
+.project-5 {
+    .header-hero {
+        background-color: $ny-greenish;
+    }
+}
+.project-6 {
+    .header-hero {
+        background-color: $ny-light-blue;
+    }
+}
+.project-7 {
+    .header-hero {
+        background-color: $ny-dark-blue;
+    }
+}
+.project-8 {
+    .header-hero {
+        background-color: $ny-pinkish;
+    }
+}
+.project-1 {
+    .header-hero {
+        background-color: $ny-reddish;
     }
 }

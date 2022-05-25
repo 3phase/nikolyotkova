@@ -1,4 +1,13 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, ParamMap } from '@angular/router';
+import { Observable, switchMap } from 'rxjs';
+import { ProjectService } from './project.service';
+
+export interface IProject {
+  id: number;
+  title: string;
+  description: string;
+}
 
 @Component({
   selector: 'app-project',
@@ -7,9 +16,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectComponent implements OnInit {
 
-  constructor() { }
+  public project$!: Observable<IProject>;
+
+  constructor(
+    private _route: ActivatedRoute,
+    private _projectsService: ProjectService
+  ) { }
 
   ngOnInit(): void {
+    (this.project$ as any) = this._route.paramMap.pipe(
+      switchMap((params: ParamMap) =>
+        this._projectsService.getProject(params.get('id')!))
+    );
   }
 
 }
