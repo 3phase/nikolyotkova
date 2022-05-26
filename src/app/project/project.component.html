@@ -6,8 +6,8 @@
         </h1>
         <p>{{ project.description }}</p>
     </div>
-    <img *ngIf="project.heroImg" [src]="project.heroImg" class="hero-img">
-    <img *ngIf="project.logosDescImg" [src]="project.logosDescImg" class="hero-img">
+    <img *ngIf="project.heroImg" [src]="project.heroImg" class="hero-img" id="first-img">
+    <img *ngIf="project.logosDescImg" [src]="project.logosDescImg" class="hero-img" id="second-img">
     <div class="content-pane" *ngIf="project.logoDesc">
         <h2 *ngIf="project.logoDesc">
             {{ project.logoDesc }}
@@ -40,5 +40,5 @@
             </div>
         </div>
     </div>
-    <img *ngIf="project.endImage" [src]="project.endImage" class="hero-img">
+    <img *ngIf="project.endImage" [src]="project.endImage" class="hero-img" id="third-img">
 </div>
