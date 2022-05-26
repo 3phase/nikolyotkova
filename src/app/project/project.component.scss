@@ -143,3 +143,34 @@ $projectEightColor: #0091bd;
         background-color: $projectEightColor;
     }
 }
+
+@media only screen and (max-device-width: 812px) {
+    .content-pane {
+        width: 90%;
+        padding: 10px 0;
+        margin: 30px auto;
+    }
+
+    .color-palette {
+        margin: 30px 0;
+        height: unset;
+
+        .color-shape {
+            height: 7vh;
+            width: 7vh;
+            margin: 0 5px;
+            border-radius: 7vh;
+        }
+    }
+
+    .row {
+        margin-bottom: 10px;
+    }
+
+    .project-meta {
+        font-size: 1em;
+        strong {
+            margin-right: 5px;
+        }
+    }
+}
