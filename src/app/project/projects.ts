@@ -3,7 +3,7 @@ import { IProject } from "./project.component";
 export const PROJECTS: IProject[] = [
     {
         id: 1,
-        title: "Озеленяване Кирил Й.",
+        title: "Озеленяване Кирил Й",
         description: '"Озеленяване Кирил Й." е нова фирма за залесяване, изграждане на поливни системи и поддръжка на тревни площи',
         heroImg: '/assets/project-assets/kiril-hero.png',
         logosDescImg: '/assets/project-assets/kiril-logos.jpg',
