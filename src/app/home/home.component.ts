@@ -1,17 +1,34 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent {
+export class HomeComponent implements AfterViewInit {
+
+  @ViewChild('video')
+  public video!: ElementRef;
+
+  @ViewChild('focusContainer')
+  public focusContainer!: ElementRef;
 
   constructor() {
     new Promise((resolve) => {
       this.loadScript();
       resolve(true);
     });
+  }
+
+  ngAfterViewInit() {
+    if (!!this.video) {
+      // this.video.nativeElement.play();
+      this.video.nativeElement.addEventListener("ended", (event: any) => {
+        this.video.nativeElement.style.display = 'none';
+        this.focusContainer!.nativeElement.style.visibility = 'visible';
+        this.focusContainer!.nativeElement.style.opacity = 1;
+      }, false);
+    }
   }
 
   public loadScript() {
