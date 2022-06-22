@@ -1,4 +1,5 @@
-import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, HostListener, ViewChild } from '@angular/core';
+
 
 @Component({
   selector: 'app-home',
@@ -13,6 +14,32 @@ export class HomeComponent implements AfterViewInit {
   @ViewChild('focusContainer')
   public focusContainer!: ElementRef;
 
+  @ViewChild('videoWrapper')
+  public videoWrapper!: ElementRef;
+
+  @ViewChild('carouselWrapper')
+  public carouselWrapper!: ElementRef;
+
+  private _visibleTarget = 1;
+  private _lastScrollTop = 0;
+
+  @HostListener('window:scroll', ['$event'])
+  onWindowScroll(e: any) {
+    var st = window.pageYOffset || document.documentElement.scrollTop;
+    if (st > this._lastScrollTop && this._visibleTarget === 1) {
+      this.scrollToProjects();
+    } else if (st < this._lastScrollTop - 5 && this._visibleTarget === 2) {
+      window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+      });
+      this._visibleTarget = 1;
+    }
+
+    this._lastScrollTop = st <= 0 ? 0 : st;
+  }
+
   constructor() {
     new Promise((resolve) => {
       this.loadScript();
@@ -20,13 +47,29 @@ export class HomeComponent implements AfterViewInit {
     });
   }
 
+  public scrollToProjects() {
+    window.scroll({
+      top: this.carouselWrapper.nativeElement.offsetTop + 2,
+      left: 0,
+      behavior: 'smooth'
+    });
+    this._visibleTarget = 2;
+  }
+
   ngAfterViewInit() {
     if (!!this.video) {
       // this.video.nativeElement.play();
+      if (sessionStorage.getItem('videoPlayed')) {
+        this.video.nativeElement.style.display = 'none';
+        this.focusContainer!.nativeElement.style.visibility = 'visible';
+        this.focusContainer!.nativeElement.style.opacity = 1;
+        return;
+      }
       this.video.nativeElement.addEventListener("ended", (event: any) => {
         this.video.nativeElement.style.display = 'none';
         this.focusContainer!.nativeElement.style.visibility = 'visible';
         this.focusContainer!.nativeElement.style.opacity = 1;
+        // sessionStorage.setItem('videoPlayed', 'true');
       }, false);
     }
   }

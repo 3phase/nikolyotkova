@@ -1,3 +1,4 @@
+<app-navbar></app-navbar>
 <div *ngIf="project$ | async as project" class="project-{{project.id}}">
     <div class="header-hero"></div>
     <div *ngIf="project.title || project.description" class="content-pane">

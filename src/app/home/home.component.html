@@ -1,4 +1,4 @@
-<div class="container video-preview">
+<div #videoWrapper class="container video-preview">
     <video #video [muted]="true" autoplay playsinline id="video">
         <source src="/assets/videos/video-1655737334.mp4" type="video/mp4">
     </video>
@@ -6,16 +6,15 @@
         <img src="/assets/logo_name.png">
         <p>Graphic Designer</p>
         <div class="action-buttons">
-            <div class="action-btn-square">
-                <a>Проекти</a>
-            </div>
-            <div class="action-btn-square">
-                <a>За мен</a>
-            </div>
+            <a [routerLink]="'about'" class="action-btn-square">За мен</a>
+            <a href="#" (click)="scrollToProjects()" class="action-btn-square">Към Проектите</a>
         </div>
     </div>
 </div>
-<div class="container carousel-wrapper">
+<div class="navbar-wrapper">
+    <app-navbar></app-navbar>
+</div>
+<div #carouselWrapper class="container carousel-wrapper">
     <!-- <div class="hz-scroll-container">
         <div class="item item-one"></div>
         <div class="item item-two"></div>

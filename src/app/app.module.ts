@@ -1,18 +1,17 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { AboutComponent } from './about/about.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { AboutComponent } from './about/about.component';
+import { CommonComponentsModule } from './common-components/common-components.module';
+import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { ProjectsModule } from './project/projects.module';
-import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent,
     AboutComponent,
     HomeComponent,
     FooterComponent,
@@ -20,7 +19,8 @@ import { FooterComponent } from './footer/footer.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ProjectsModule
+    CommonComponentsModule,
+    ProjectsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

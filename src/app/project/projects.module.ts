@@ -1,8 +1,9 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
+import { CommonComponentsModule } from '../common-components/common-components.module';
 
-import { ProjectsRoutingModule } from './projects-routing.module';
 import { ProjectComponent } from './project.component';
+import { ProjectsRoutingModule } from './projects-routing.module';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { ProjectComponent } from './project.component';
   ],
   imports: [
     CommonModule,
-    ProjectsRoutingModule
+    ProjectsRoutingModule,
+    CommonComponentsModule
   ]
 })
 export class ProjectsModule { }

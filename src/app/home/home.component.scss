@@ -1,5 +1,8 @@
 @use "../../assets/colors.scss" as *;
 
+$transition-bezier: 1, 0, 0, 1;
+$transition-len: 0.35s;
+
 .container {
     height: 100vh;
     width: 100%;
@@ -19,6 +22,18 @@
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
+    // display: none;
+}
+
+@media (min-device-width: 320px) and (max-device-width: 900px) {
+    #video {
+        top: -160px;
+        left: -770px;
+        margin: 0 auto;
+        display: block;
+        min-width: unset;
+        max-width: unset;
+    }
 }
 
 .logo-focus {
@@ -38,25 +53,68 @@
     }
 
     p {
-        font-size: 1.7em;
-        letter-spacing: -0.3px;
+        font-size: 1.8em;
+        letter-spacing: 1px;
         font-weight: 600;
-        color: #1b1b1b;
+        color: #163741;
     }
 
-    .action-buttons {
-        margin-top: 70px;
-        display: flex;
-        justify-content: space-around;
-        width: 30%;
-        font-size: 1.4em;
-    }
+    // .action-btn-square:after {
+    //     content: "";
+    //     position: absolute;
+    //     top: 0px;
+    //     left: 0px;
+    //     width: 0px;
+    //     height: 100%;
+    //     background: #0092bd;
+    //     transition: all 0.3s;
+    //     z-index: -1;
+    // }
+}
 
-    .action-btn-square {
-        padding: 10px 20px;
-        border: 2px solid #0092bd;
-        border-radius: 5px;
-    }
+.action-buttons {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    font-size: 1.4em;
+}
+
+.action-btn-square:hover {
+    color: #fff;
+    background-color: #0092bd;
+}
+
+.action-btn-square {
+    padding: 10px 20px;
+    border: 2px solid #0092bd;
+    border-radius: 5px;
+    position: relative;
+    transition: all $transition-len cubic-bezier($transition-bezier);
+}
+
+.action-btn-square::before,
+.action-btn-square::after {
+    background: #0092bd;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    transition: all $transition-len cubic-bezier($transition-bezier);
+}
+
+.action-btn-square:hover:before {
+    width: 100%;
+}
+
+.action-btn-square::after {
+    height: 100%;
+    width: 0;
+    top: 0;
+    left: 0;
+}
+
+.action-btn-square:hover::after {
+    width: 100%;
 }
 
 .hz-scroll-container {
