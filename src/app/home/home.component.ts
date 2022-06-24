@@ -1,5 +1,5 @@
 import { AfterViewInit, Component, ElementRef, HostListener, ViewChild } from '@angular/core';
-
+import * as Flickity from 'flickity';
 
 @Component({
   selector: 'app-home',
@@ -20,8 +20,12 @@ export class HomeComponent implements AfterViewInit {
   @ViewChild('carouselWrapper')
   public carouselWrapper!: ElementRef;
 
+  @ViewChild('slider')
+  public slider!: ElementRef;
+
   private _visibleTarget = 1;
   private _lastScrollTop = 0;
+  private _flickity!: Flickity;
 
   @HostListener('window:scroll', ['$event'])
   onWindowScroll(e: any) {
@@ -57,21 +61,24 @@ export class HomeComponent implements AfterViewInit {
   }
 
   ngAfterViewInit() {
+    this._flickity = new Flickity(this.slider.nativeElement, { "selectedAttraction": 0.03, "friction": 0.2, "prevNextButtons": true, "pageDots": false });
     if (!!this.video) {
       // this.video.nativeElement.play();
       if (sessionStorage.getItem('videoPlayed')) {
-        this.video.nativeElement.style.display = 'none';
-        this.focusContainer!.nativeElement.style.visibility = 'visible';
-        this.focusContainer!.nativeElement.style.opacity = 1;
+        this._hideVideo();
         return;
       }
       this.video.nativeElement.addEventListener("ended", (event: any) => {
-        this.video.nativeElement.style.display = 'none';
-        this.focusContainer!.nativeElement.style.visibility = 'visible';
-        this.focusContainer!.nativeElement.style.opacity = 1;
+        this._hideVideo();
         sessionStorage.setItem('videoPlayed', 'true');
       }, false);
     }
+  }
+
+  private _hideVideo() {
+    this.video.nativeElement.style.display = 'none';
+    this.focusContainer!.nativeElement.style.visibility = 'visible';
+    this.focusContainer!.nativeElement.style.opacity = 1;
   }
 
   public loadScript() {
