@@ -27,6 +27,23 @@ export class HomeComponent implements AfterViewInit {
   private _lastScrollTop = 0;
   private _flickity!: Flickity;
 
+  @HostListener('window:scroll', ['$event'])
+  onWindowScroll(e: any) {
+    var st = window.pageYOffset || document.documentElement.scrollTop;
+    if (st > this._lastScrollTop && this._visibleTarget === 1) {
+      this.scrollToProjects();
+    } else if (st < this._lastScrollTop - 5 && this._visibleTarget === 2) {
+      window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+      });
+      this._visibleTarget = 1;
+    }
+
+    this._lastScrollTop = st <= 0 ? 0 : st;
+  }
+
   constructor() {
     new Promise((resolve) => {
       this.loadScript();
