@@ -69,7 +69,7 @@ export class HomeComponent implements AfterViewInit {
         this.video.nativeElement.style.display = 'none';
         this.focusContainer!.nativeElement.style.visibility = 'visible';
         this.focusContainer!.nativeElement.style.opacity = 1;
-        // sessionStorage.setItem('videoPlayed', 'true');
+        sessionStorage.setItem('videoPlayed', 'true');
       }, false);
     }
   }
