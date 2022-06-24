@@ -28,17 +28,6 @@ $transition-len: 0.35s;
     transform: translate(-50%, -50%);
 }
 
-@media (min-device-width: 320px) and (max-device-width: 900px) {
-    #video {
-        top: -160px;
-        left: -770px;
-        margin: 0 auto;
-        display: block;
-        min-width: unset;
-        max-width: unset;
-    }
-}
-
 .logo-focus {
     display: flex;
     width: 100%;
@@ -95,6 +84,7 @@ $transition-len: 0.35s;
     border-radius: 5px;
     position: relative;
     transition: all $transition-len cubic-bezier($transition-bezier);
+    color: #1e1e1e;
 }
 
 .action-btn-square::before,
@@ -232,9 +222,16 @@ $transition-len: 0.35s;
     }
 
     .logo-focus {
+        width: 90%;
+        margin: 0 auto;
+
         img {
             width: 150px;
         }
+    }
+
+    .action-btn-square {
+        padding: 10px;
     }
 }
 @media (min-width: 961px) {
