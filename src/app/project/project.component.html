@@ -7,6 +7,25 @@
         </h1>
         <p>{{ project.description }}</p>
     </div>
+    <div class="content-pane customer-meta" *ngIf="project.customer || project.briefProblem || project.aim">
+        <div class="customer-meta-container" *ngIf="project.customer">
+            <p><strong>{{ project.customer.label }}:</strong> {{ project.customer.text }}</p>
+        </div>
+        <div class="customer-meta-container" *ngIf="project.briefProblem">
+            <p><strong>{{ project.briefProblem.label }}:</strong> {{ project.briefProblem.text }}</p>
+        </div>
+        <div class="customer-meta-container" *ngIf="project.aim">
+            <p><strong>{{ project.aim.label }}:</strong> {{ project.aim.text }}</p>
+        </div>
+    </div>
+    <div class="content-pane customer-meta" *ngIf="project.challenge || project.feedback">
+        <div class="customer-meta-container" *ngIf="project.challenge">
+            <p><strong>{{ project.challenge.label }}:</strong> {{ project.challenge.text }}</p>
+        </div>
+        <div class="customer-meta-container" *ngIf="project.feedback">
+            <p><strong>{{ project.feedback.label }}:</strong> {{ project.feedback.text }}</p>
+        </div>
+    </div>
     <img *ngIf="project.heroImg" [src]="project.heroImg" class="hero-img" id="first-img">
     <img *ngIf="project.logosDescImg" [src]="project.logosDescImg" class="hero-img" id="second-img">
     <div class="content-pane" *ngIf="project.logoDesc">

@@ -3,10 +3,20 @@ import { ActivatedRoute, ParamMap } from '@angular/router';
 import { Observable, switchMap } from 'rxjs';
 import { ProjectService } from './project.service';
 
+export interface ICustomizableInput {
+  label: string;
+  text: string;
+}
+
 export interface IProject {
   id: number;
   title?: string;
   description?: string;
+  customer?: ICustomizableInput;
+  briefProblem?: ICustomizableInput;
+  challenge?: ICustomizableInput;
+  aim?: ICustomizableInput;
+  feedback?: ICustomizableInput;
   heroImg?: string;
   logosDescImg?: string;
   logoDesc?: string;

@@ -32,16 +32,40 @@
 
     .social-links {
         margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: -10px;
+    }
+
+    .social-links>* {
+        margin-top: 10px;
+        margin-left: 0;
     }
 
     a {
         font-size: 1.6em;
         color: #59c2f0;
     }
+}
 
-    a:hover {
-        border-bottom: 1px dashed;
-    }
+.social-links a {
+    padding: 5px 15px;
+    background-color: #59c2f0;
+    color: #fff;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+.social-links a:hover {
+    background-color: #55b5de;
+}
+
+.social-links a:active {
+    background-color: #4babd4;
+}
+
+.social-links a:nth-child(1) {
+    margin-left: 0;
 }
 
 @media (min-width: 320px) {

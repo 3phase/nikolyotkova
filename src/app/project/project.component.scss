@@ -74,6 +74,7 @@ $projectEightColor: #0091bd;
 
 .project-meta {
     font-size: 1.5em;
+
     strong {
         margin-right: 10px;
     }
@@ -90,57 +91,121 @@ $projectEightColor: #0091bd;
         background-color: $projectOneColor;
     }
 }
+
 .project-2 {
     .header-hero {
         background-color: $projectTwoColor;
     }
 }
+
 .project-3 {
     .header-hero {
         background-color: $ny-dark-blue;
     }
+
     #first-img {
         margin-top: 20px;
         margin-bottom: 0;
     }
+
     #third-img {
         margin-top: 0;
         margin-bottom: 20px;
     }
 }
+
 .project-4 {
     .header-hero {
         background-color: $projectFourColor;
     }
 }
+
 .project-5 {
     .header-hero {
         background-color: $projectFiveColor;
     }
+
     .hero-img {
         width: 100%;
         margin-top: 0;
         margin-bottom: 0;
     }
 }
+
 .project-6 {
     .header-hero {
         background-color: $projectSixColor;
     }
 }
+
 .project-7 {
     .header-hero {
         background-color: $ny-dark-blue;
     }
+
     .hero-img {
         width: 100%;
         margin-top: 0;
         margin-bottom: 0;
     }
 }
+
 .project-8 {
     .header-hero {
         background-color: $projectEightColor;
+    }
+}
+
+.customer-meta {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: justify;
+
+    .customer-meta-container {
+        padding: 0 10px;
+        // border: 1px solid;
+    }
+
+    .customer-meta-container p {
+        font-size: 1.4em;
+    }
+
+    .customer-meta-container strong {
+        font-weight: bold;
+    }
+}
+
+.customer-meta:nth-child(n+1) {
+    margin-bottom: 0;
+}
+
+.customer-meta:nth-child(n+2) {
+    margin-top: 0;
+}
+
+@media (min-width: 320px) {
+    /* smartphones, iPhone, portrait 480x320 phones */
+    .customer-meta {
+        flex-direction: column;
+
+        .customer-meta-container {
+            width: 100%;
+            max-width: unset;
+        }
+    }
+}
+
+@media (min-width: 750px) {
+    /* smartphones, iPhone, portrait 480x320 phones */
+    .customer-meta {
+        flex-direction: row;
+
+        .customer-meta-container {
+            width: unset;
+            max-width: 40%;
+        }
     }
 }
 
@@ -169,6 +234,7 @@ $projectEightColor: #0091bd;
 
     .project-meta {
         font-size: 1em;
+
         strong {
             margin-right: 5px;
         }
