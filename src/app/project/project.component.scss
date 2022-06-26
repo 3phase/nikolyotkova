@@ -158,9 +158,9 @@ $projectEightColor: #0091bd;
 
 .customer-meta {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-wrap: wrap;
-    width: 100%;
+    width: 80%;
     text-align: justify;
 
     .customer-meta-container {
@@ -238,5 +238,16 @@ $projectEightColor: #0091bd;
         strong {
             margin-right: 5px;
         }
+    }
+}
+
+.project-5, .project-8 {
+    .customer-meta-container {
+        max-width: unset;
+    }
+
+    .customer-meta:nth-child(n+2) {
+        margin-top: -10px;
+        padding-top: 0;
     }
 }

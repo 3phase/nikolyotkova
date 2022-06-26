@@ -5,14 +5,14 @@
         <h1 class="title">
             {{ project.title }}
         </h1>
-        <p>{{ project.description }}</p>
+        <p innerHTML="{{ project.description}}"></p>
     </div>
     <div class="content-pane customer-meta" *ngIf="project.customer || project.briefProblem || project.aim">
         <div class="customer-meta-container" *ngIf="project.customer">
-            <p><strong>{{ project.customer.label }}:</strong> {{ project.customer.text }}</p>
+            <p><strong>{{ project.customer.label }}:</strong> <span innerHTML="{{ project.customer.text }}"></span></p>
         </div>
         <div class="customer-meta-container" *ngIf="project.briefProblem">
-            <p><strong>{{ project.briefProblem.label }}:</strong> {{ project.briefProblem.text }}</p>
+            <p><strong>{{ project.briefProblem.label }}:</strong> <span innerHTML="{{ project.briefProblem.text }}"></span></p>
         </div>
         <div class="customer-meta-container" *ngIf="project.aim">
             <p><strong>{{ project.aim.label }}:</strong> {{ project.aim.text }}</p>
