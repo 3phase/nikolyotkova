@@ -43,3 +43,26 @@
         border-bottom: 1px dashed;
     }
 }
+
+@media (min-width: 320px) {
+
+    /* smartphones, iPhone, portrait 480x320 phones */
+    .nikolche-video {
+        width: 300px;
+        height: 187px;
+    }
+}
+
+@media (min-width: 641px) {
+    .nikolche-video {
+        width: 400px;
+        height: 237px;
+    }
+}
+
+@media (min-width: 961px) {
+    .nikolche-video {
+        width: 700px;
+        height: 415px;
+    }
+}

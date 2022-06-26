@@ -7,14 +7,14 @@
         <p>Graphic Designer</p>
         <div class="action-buttons">
             <a [routerLink]="'about'" class="action-btn-square">За мен</a>
-            <a href="#" (click)="scrollToProjects()" class="action-btn-square">Към Проектите</a>
+            <a href="#projects" class="action-btn-square">Към Проектите</a>
         </div>
     </div>
 </div>
 <div class="navbar-wrapper">
     <app-navbar></app-navbar>
 </div>
-<div #carouselWrapper class="container carousel-wrapper">
+<div #carouselWrapper id="projects" class="container carousel-wrapper">
     <!-- <div class="hz-scroll-container">
         <div class="item item-one"></div>
         <div class="item item-two"></div>
