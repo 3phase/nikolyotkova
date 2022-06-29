@@ -7,7 +7,7 @@ export const PROJECTS: IProject[] = [
         description: '"Озеленяване Кирил Й" е нова фирма за залесяване, изграждане на поливни системи и поддръжка на тревни площи',
         customer: {
             label: 'Клиент',
-            text: ' Кирил Йотков<br><br><strong>Цел на брифа:</strong> нов бранд'
+            text: ' Кирил Йотков<br><br><br><strong>Цел на брифа:</strong> нов бранд'
         },
         challenge: {
             label: 'Предизвикателство',
