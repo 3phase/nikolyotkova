@@ -26,6 +26,7 @@ export class HomeComponent implements AfterViewInit {
   private _visibleTarget = 1;
   private _lastScrollTop = 0;
   private _flickity!: Flickity;
+  private _observer!: ResizeObserver;
 
   constructor() {
     new Promise((resolve) => {
@@ -44,6 +45,11 @@ export class HomeComponent implements AfterViewInit {
   }
 
   ngAfterViewInit() {
+    this.carouselWrapper.nativeElement.style.height = `${window.innerHeight}px`;
+    this.videoWrapper.nativeElement.style.height = `${window.innerHeight}px`;
+    this._observer = new ResizeObserver((entries) => this._reactOnChanges(entries));
+    this._observer.observe(this.carouselWrapper.nativeElement);
+
     this._flickity = new Flickity(this.slider.nativeElement, { "selectedAttraction": 0.03, "friction": 0.2, "prevNextButtons": true, "pageDots": false });
     if (!!this.video) {
       // this.video.nativeElement.play();
@@ -56,6 +62,16 @@ export class HomeComponent implements AfterViewInit {
         sessionStorage.setItem('videoPlayed', 'true');
       }, false);
     }
+  }
+
+  ngOnDestroy() {
+    this._observer.unobserve(this.carouselWrapper.nativeElement);
+  }
+
+  private _reactOnChanges(entries: ResizeObserverEntry[]): void {
+    this.carouselWrapper.nativeElement.style.height = `${window.innerHeight}px`;
+    this.videoWrapper.nativeElement.style.height = `${window.innerHeight}px`;
+    document.querySelectorAll<HTMLElement>('.flickity-slider')[0].style.height = `${window.innerHeight}px`;
   }
 
   private _hideVideo() {
