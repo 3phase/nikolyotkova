@@ -15,6 +15,11 @@ $projectEightColor: #0091bd;
 .row {
     display: flex;
     place-content: space-between;
+    margin: 10px 0;
+
+    div {
+        display: flex;
+    }
 }
 
 .header-hero {
@@ -81,7 +86,7 @@ $projectEightColor: #0091bd;
 }
 
 .program-icon {
-    width: 30px;
+    height: 50px;
     float: left;
     margin: 0 10px;
 }
@@ -177,11 +182,11 @@ $projectEightColor: #0091bd;
     }
 }
 
-.customer-meta:nth-child(n+1) {
+.customer-meta:nth-child(n + 1) {
     margin-bottom: 0;
 }
 
-.customer-meta:nth-child(n+2) {
+.customer-meta:nth-child(n + 2) {
     margin-top: 0;
 }
 
@@ -195,6 +200,11 @@ $projectEightColor: #0091bd;
             max-width: unset;
         }
     }
+
+    .content-pane {
+        width: 90%;
+        padding: 5%;
+    }
 }
 
 @media (min-width: 750px) {
@@ -206,6 +216,12 @@ $projectEightColor: #0091bd;
             width: unset;
             max-width: 40%;
         }
+    }
+
+    .content-pane {
+        width: 60%;
+        margin: 60px auto;
+        padding: 20px 0;
     }
 }
 
@@ -241,12 +257,13 @@ $projectEightColor: #0091bd;
     }
 }
 
-.project-5, .project-8 {
+.project-5,
+.project-8 {
     .customer-meta-container {
         max-width: unset;
     }
 
-    .customer-meta:nth-child(n+2) {
+    .customer-meta:nth-child(n + 2) {
         margin-top: -10px;
         padding-top: 0;
     }
