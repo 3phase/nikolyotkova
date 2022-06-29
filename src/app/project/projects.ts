@@ -77,7 +77,7 @@ export const PROJECTS: IProject[] = [
             label: 'Решение',
             text: 'Създаване на нов дизайн на бранда, който същевременно използва налични дизайн елементи, но се създават и нови такива, които да отговарят на мисията на бранда'
         },
-        heroImg: '/assets/project-assets/social-network-design-hero.jpg',
+        heroImg: '/assets/project-assets/social-network-design-hero.png',
         endImage: '/assets/project-assets/social-network-design-endimg.jpg'
     },
     {
@@ -85,11 +85,11 @@ export const PROJECTS: IProject[] = [
         title: "Интерактивни кампании",
         customer: {
             label: 'Клиент',
-            text: 'Студентски проект за новата серия фъстъци “Hrrupss” на бранда ROIS'
+            text: ' Студентски проект за новата серия фъстъци “Hrrupss” на бранда ROIS.'
         },
         briefProblem: {
             label: 'Проблем по бриф',
-            text: ' Недостатъчно информация за бранда, не се избира от таргет потребителите'
+            text: ' Недостатъчно информация за бранда, не се избира от таргет потребителите.'
         },
         aim: {
             label: 'Цел',
