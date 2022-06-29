@@ -116,7 +116,7 @@ export const PROJECTS: IProject[] = [
         title: "Дизайн на външна реклама",
         customer: {
             label: 'Задание',
-            text: 'Брандинг на стартъп'
+            text: ' Брандинг на стартъп'
         },
         briefProblem: {
             label: 'Сътрудници',
@@ -124,7 +124,7 @@ export const PROJECTS: IProject[] = [
         },
         aim: {
             label: 'Концепция',
-            text: 'Изготвяне на криейтив за рекламна кампания с цел осведоменост'
+            text: 'Изготвяне на криейтив за рекламна кампания с цел осведоменост.'
         },
         heroImg: '/assets/project-assets/external-ad-hero.jpg',
     },
@@ -141,7 +141,7 @@ export const PROJECTS: IProject[] = [
         title: "Личен брандинг",
         customer: {
             label: 'Задание',
-            text: 'създаване на лично лого, което да отговаря на личността ми'
+            text: ' създаване на лично лого, което да отговаря на личността ми.'
         },
         challenge: {
             label: 'Концепция',
