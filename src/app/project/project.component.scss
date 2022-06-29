@@ -257,6 +257,13 @@ $projectEightColor: #0091bd;
     }
 }
 
+.project-2 {
+    .customer-meta.second-meta-row div {
+        width: 100%;
+        max-width: unset;
+    }
+}
+
 .project-5,
 .project-8 {
     .customer-meta-container {

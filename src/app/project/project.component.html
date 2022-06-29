@@ -7,7 +7,7 @@
         </h1>
         <p innerHTML="{{ project.description}}"></p>
     </div>
-    <div class="content-pane customer-meta" *ngIf="project.customer || project.briefProblem || project.aim">
+    <div class="content-pane customer-meta first-meta-row" *ngIf="project.customer || project.briefProblem || project.aim">
         <div class="customer-meta-container" *ngIf="project.customer">
             <p><strong>{{ project.customer.label }}:</strong> <span innerHTML="{{ project.customer.text }}"></span></p>
         </div>
@@ -18,7 +18,7 @@
             <p><strong>{{ project.aim.label }}:</strong> {{ project.aim.text }}</p>
         </div>
     </div>
-    <div class="content-pane customer-meta" *ngIf="project.challenge || project.feedback">
+    <div class="content-pane customer-meta second-meta-row" *ngIf="project.challenge || project.feedback">
         <div class="customer-meta-container" *ngIf="project.challenge">
             <p><strong>{{ project.challenge.label }}:</strong> {{ project.challenge.text }}</p>
         </div>
