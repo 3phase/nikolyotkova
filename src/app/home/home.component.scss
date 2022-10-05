@@ -8,8 +8,11 @@ $transition-len: 0.35s;
 
     &.video-preview {
         background-color: #f1eff1;
-        background: url('../../assets/bg.gif') center no-repeat;
         background-size: cover;
+    }
+
+    &.video-preview.background-image-vp {
+        background: url('../../assets/bg.gif') center no-repeat;
     }
 
     &.carousel-wrapper {

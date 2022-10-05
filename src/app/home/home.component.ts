@@ -75,6 +75,7 @@ export class HomeComponent implements AfterViewInit {
   }
 
   private _hideVideo() {
+    this.videoWrapper.nativeElement.classList.add("background-image-vp");
     this.video.nativeElement.style.display = 'none';
     this.focusContainer!.nativeElement.style.visibility = 'visible';
     this.focusContainer!.nativeElement.style.opacity = 1;
