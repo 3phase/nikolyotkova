@@ -1,0 +1,11 @@
+{
+    "landing": {
+        "title": "Graphic Designer",
+        "about": "About me",
+        "projectsRel": "Projects"
+    },
+    "navbar": {
+        "about": "About me",
+        "langSwitch": "БГ"
+    }
+}

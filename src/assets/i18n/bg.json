@@ -1,0 +1,11 @@
+{
+    "landing": {
+        "title": "Графичен дизайнер",
+        "about": "За мен",
+        "projectsRel": "Към проектите"
+    },
+    "navbar": {
+        "about": "За мен",
+        "langSwitch": "EN"
+    }
+}

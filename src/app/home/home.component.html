@@ -4,10 +4,11 @@
     </video>
     <div #focusContainer class="logo-focus">
         <img src="/assets/logo_retina.png">
-        <p>Графичен дизайнер</p>
+        <p>{{ 'landing.title' | translate }}</p>
         <div class="action-buttons">
-            <a [routerLink]="'about'" class="action-btn-square">За мен</a>
-            <a href="javascript:document.getElementById('projects').scrollIntoView(true);" class="action-btn-square">Към проектите</a>
+            <a [routerLink]="'about'" class="action-btn-square">{{ 'landing.about' | translate }}</a>
+            <a href="javascript:document.getElementById('projects').scrollIntoView(true);" class="action-btn-square">{{
+                'landing.projectsRel' | translate}}</a>
         </div>
     </div>
 </div>

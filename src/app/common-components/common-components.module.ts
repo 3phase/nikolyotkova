@@ -1,7 +1,8 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { NavbarComponent } from '../navbar/navbar.component';
+import { NgModule } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 import { AppRoutingModule } from '../app-routing.module';
+import { NavbarComponent } from '../navbar/navbar.component';
 
 
 @NgModule({
@@ -9,11 +10,13 @@ import { AppRoutingModule } from '../app-routing.module';
     NavbarComponent
   ],
   exports: [
-    NavbarComponent
+    NavbarComponent,
+    TranslateModule
   ],
   imports: [
     AppRoutingModule,
-    CommonModule
+    CommonModule,
+    TranslateModule
   ]
 })
 export class CommonComponentsModule { }
