@@ -13,6 +13,7 @@ $transition-len: 0.35s;
 
     &.video-preview.background-image-vp {
         background: url('../../assets/bg.gif') center no-repeat;
+        background-size: cover;
     }
 
     &.carousel-wrapper {
