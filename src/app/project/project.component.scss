@@ -15,7 +15,7 @@ $projectEightColor: #0091bd;
 .row {
     display: flex;
     place-content: space-between;
-    margin: 10px 0;
+    margin: 10px 1px;
 
     div {
         display: flex;
@@ -89,6 +89,16 @@ $projectEightColor: #0091bd;
     height: 50px;
     float: left;
     margin: 0 10px;
+}
+
+.project-container {
+
+    p,
+    h1:not(.title),
+    h2 {
+        font-family: montserrat;
+        font-weight: 100 !important;
+    }
 }
 
 .project-1 {
@@ -166,7 +176,7 @@ $projectEightColor: #0091bd;
     justify-content: space-between;
     flex-wrap: wrap;
     width: 80%;
-    text-align: justify;
+    text-align: left;
 
     .customer-meta-container {
         padding: 0 10px;
@@ -191,6 +201,7 @@ $projectEightColor: #0091bd;
 }
 
 @media (min-width: 320px) {
+
     /* smartphones, iPhone, portrait 480x320 phones */
     .customer-meta {
         flex-direction: column;
@@ -208,6 +219,7 @@ $projectEightColor: #0091bd;
 }
 
 @media (min-width: 750px) {
+
     /* smartphones, iPhone, portrait 480x320 phones */
     .customer-meta {
         flex-direction: row;
@@ -220,8 +232,8 @@ $projectEightColor: #0091bd;
 
     .content-pane {
         width: 60%;
-        margin: 60px auto;
-        padding: 20px 0;
+        margin: 0 auto;
+        padding: 5px 0;
     }
 }
 

@@ -1,0 +1,30 @@
+{
+    "generic": {
+        "name": "Nikol Yotkova",
+        "occupation": "Graphic Designer"
+    },
+    "landing": {
+        "about": "About me",
+        "projectsRel": "Projects",
+        "visualIdentity": "Visual identity",
+        "logoRedesign": "Logo redesign",
+        "socialMediaVisions": "Social media and<br>website design",
+        "interactiveCampaigns": "Printed ads",
+        "printVisions": "Editorials",
+        "outdoorAdDesign": "Out of home<br>design",
+        "illustrationsAndPhotography": "Illustrations and<br>photography",
+        "personalBranding": "Personal<br>branding"
+    },
+    "navbar": {
+        "about": "About me",
+        "langSwitch": "БГ"
+    },
+    "about": {
+        "paragraph": "Hi there! My name is Nikol and I love to experiment with colors. I like to create beautiful things that bring a positive outcome.<br>You can follow me and check out my work in my social media."
+    },
+    "projectText": {
+        "usedFont": "Font",
+        "programsUsed": "Used software",
+        "projectDate": "Date of the project"
+    }
+}

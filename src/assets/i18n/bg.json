@@ -1,0 +1,30 @@
+{
+    "generic": {
+        "name": "Никол Йоткова",
+        "occupation": "Графичен дизайнер"
+    },
+    "landing": {
+        "about": "За мен",
+        "projectsRel": "Към проектите",
+        "visualIdentity": "Визуална идентичност",
+        "logoRedesign": "Редизайн на<br>лого",
+        "socialMediaVisions": "Визии за<br>социални мрежи",
+        "interactiveCampaigns": "Интерактивни<br>кампании",
+        "printVisions": "Визии за<br>печатни издания",
+        "outdoorAdDesign": "Дизайн на<br>външна реклама",
+        "illustrationsAndPhotography": "Илюстрации и<br>фотографии",
+        "personalBranding": "Личен<br>брандинг"
+    },
+    "navbar": {
+        "about": "За мен",
+        "langSwitch": "EN"
+    },
+    "about": {
+        "paragraph": "Здравейте! Аз съм Никол и обичам да експериментирам с цветовете. Харесва ми да създавам красиви неща, които да носят положителен краен резултат.<br>Можете да ме последвате и да разгледате работата ми в социалните мрежи."
+    },
+    "projectText": {
+        "usedFont": "Шрифт",
+        "programsUsed": "Използвани програми",
+        "projectDate": "Дата на проекта"
+    }
+}
