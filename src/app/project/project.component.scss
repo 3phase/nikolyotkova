@@ -91,6 +91,16 @@ $projectEightColor: #0091bd;
     margin: 0 10px;
 }
 
+.project-container {
+
+    p,
+    h1:not(.title),
+    h2 {
+        font-family: montserrat;
+        font-weight: 100 !important;
+    }
+}
+
 .project-1 {
     .header-hero {
         background-color: $projectOneColor;
@@ -191,6 +201,7 @@ $projectEightColor: #0091bd;
 }
 
 @media (min-width: 320px) {
+
     /* smartphones, iPhone, portrait 480x320 phones */
     .customer-meta {
         flex-direction: column;
@@ -208,6 +219,7 @@ $projectEightColor: #0091bd;
 }
 
 @media (min-width: 750px) {
+
     /* smartphones, iPhone, portrait 480x320 phones */
     .customer-meta {
         flex-direction: row;
