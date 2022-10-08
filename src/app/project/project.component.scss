@@ -166,7 +166,7 @@ $projectEightColor: #0091bd;
     justify-content: space-between;
     flex-wrap: wrap;
     width: 80%;
-    text-align: justify;
+    text-align: left;
 
     .customer-meta-container {
         padding: 0 10px;
@@ -220,8 +220,8 @@ $projectEightColor: #0091bd;
 
     .content-pane {
         width: 60%;
-        margin: 60px auto;
-        padding: 20px 0;
+        margin: 0 auto;
+        padding: 5px 0;
     }
 }
 
