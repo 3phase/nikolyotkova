@@ -11,7 +11,20 @@ export class AppComponent {
   constructor(
     public translateService: TranslateService
   ) {
-    translateService.setDefaultLang('bg');
-    translateService.use('bg');
+    translateService.setDefaultLang('en');
+
+    const culture = localStorage.getItem('culture');
+
+    if (localStorage.getItem('culture') == null ||
+      (culture !== 'en' && culture !== 'bg') ||
+      culture == 'en') {
+      translateService.use('en');
+      localStorage.setItem('culture', 'en');
+    } else {
+      if (culture === 'bg') {
+        translateService.use('bg');
+        localStorage.setItem('culture', 'bg');
+      }
+    }
   }
 }

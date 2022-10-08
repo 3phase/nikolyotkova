@@ -23,8 +23,10 @@ export class ProjectService {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
       if (event.lang === 'bg') {
         this._lang.next(LANG.BG);
+        localStorage.setItem('culture', 'bg');
       } else {
         this._lang.next(LANG.EN);
+        localStorage.setItem('culture', 'en');
       }
     });
   }

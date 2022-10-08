@@ -32,7 +32,7 @@ export const PROJECTS_EN: IProject[] = [
     },
     {
         id: 2,
-        title: "Private kindergarten \"Land of the children\"",
+        title: "Private kindergarten<br>\"Land of the children\"",
         description: "Client: \"Land of the children\" Ltd",
         customer: {
             label: 'The challenge',
