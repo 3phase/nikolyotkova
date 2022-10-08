@@ -4,7 +4,7 @@
     </video>
     <div #focusContainer class="logo-focus">
         <img src="/assets/logo_retina.png">
-        <p>{{ 'landing.title' | translate }}</p>
+        <p>{{ 'generic.occupation' | translate }}</p>
         <div class="action-buttons">
             <a [routerLink]="'about'" class="action-btn-square">{{ 'landing.about' | translate }}</a>
             <a href="javascript:document.getElementById('projects').scrollIntoView(true);" class="action-btn-square">{{
@@ -27,7 +27,7 @@
             <div class="hero-carousel__cell hero-carousel__cell--1">
                 <div class="hero-carousel__cell__content">
                     <a [routerLink]="['/project', 1]">
-                        <p>Визуална идентичност</p>
+                        <p>{{ 'landing.visualIdentity' | translate }}</p>
                     </a>
                 </div>
                 <!-- <span class="material-icons">swipe</span> -->
@@ -37,7 +37,7 @@
             <div class="hero-carousel__cell hero-carousel__cell--2">
                 <div class="hero-carousel__cell__content">
                     <a [routerLink]="['/project', 2]">
-                        <p>Редизайн на<br>лого</p>
+                        <p [innerHTML]="'landing.logoRedesign' | translate"></p>
                     </a>
                 </div>
             </div>
@@ -46,7 +46,7 @@
             <div class="hero-carousel__cell hero-carousel__cell--3">
                 <div class="hero-carousel__cell__content">
                     <a [routerLink]="['/project', 3]">
-                        <p>Визии за<br>социални мрежи</p>
+                        <p [innerHTML]="'landing.socialMediaVisions' | translate"></p>
                     </a>
                 </div>
             </div>
@@ -55,7 +55,7 @@
             <div class="hero-carousel__cell hero-carousel__cell--4">
                 <div class="hero-carousel__cell__content">
                     <a [routerLink]="['/project', 4]">
-                        <p>Интерактивни<br>кампании</p>
+                        <p [innerHTML]="'landing.interactiveCampaigns' | translate"></p>
                     </a>
                 </div>
             </div>
@@ -64,7 +64,7 @@
             <div class="hero-carousel__cell hero-carousel__cell--5">
                 <div class="hero-carousel__cell__content">
                     <a [routerLink]="['/project', 5]">
-                        <p>Визии за<br>печатни издания</p>
+                        <p [innerHTML]="'landing.printVisions' | translate"></p>
                     </a>
                 </div>
             </div>
@@ -73,7 +73,7 @@
             <div class="hero-carousel__cell hero-carousel__cell--6">
                 <div class="hero-carousel__cell__content">
                     <a [routerLink]="['/project', 6]">
-                        <p>Дизайн на<br>външна реклама</p>
+                        <p [innerHTML]="'landing.outdoorAdDesign' | translate"></p>
                     </a>
                 </div>
             </div>
@@ -82,7 +82,7 @@
             <div class="hero-carousel__cell hero-carousel__cell--7">
                 <div class="hero-carousel__cell__content">
                     <a [routerLink]="['/project', 7]">
-                        <p>Илюстрации и<br>фотографии</p>
+                        <p [innerHTML]="'landing.illustrationsAndPhotography' | translate"></p>
                     </a>
                 </div>
             </div>
@@ -91,7 +91,7 @@
             <div class="hero-carousel__cell hero-carousel__cell--8">
                 <div class="hero-carousel__cell__content">
                     <a [routerLink]="['/project', 8]">
-                        <p>Личен<br>брандинг</p>
+                        <p [innerHTML]="'landing.personalBranding' | translate"></p>
                     </a>
                 </div>
             </div>

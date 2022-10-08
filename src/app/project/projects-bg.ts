@@ -1,6 +1,6 @@
 import { IProject } from "./project.component";
 
-export const PROJECTS: IProject[] = [
+export const PROJECTS_BG: IProject[] = [
     {
         id: 1,
         title: "Озеленяване Кирил Й",
