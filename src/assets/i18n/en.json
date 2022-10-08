@@ -21,5 +21,10 @@
     },
     "about": {
         "paragraph": "Hi there! My name is Nikol and I love to experiment with colors. I like to create beautiful things that bring a positive outcome.<br>You can follow me and check out my work in my social media."
+    },
+    "projectText": {
+        "usedFont": "Font",
+        "programsUsed": "Used software",
+        "projectDate": "Date of the project"
     }
 }

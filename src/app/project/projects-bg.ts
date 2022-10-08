@@ -25,7 +25,7 @@ export const PROJECTS_BG: IProject[] = [
         logosDescImg: '/assets/project-assets/kiril-logos.jpg',
         logoDesc: 'Логото е изградено от визуален знак - листо и изобразява инициалите на създателя на фирмата - Кирил Йотков. Използван е този визуален елемент, за да се асоциира с една от основните дейности на фирмата - озеленяването. Композицията отразява и буквите "П" и "С" - поливни системи. Поставянето им е другата основна дейност на бранда.',
         colorPalette: ['#f04770', '#ffd167', '#06d7a0', '#108ab1', '#073a4b'],
-        font: 'Fester Extralight',
+        font: 'Fester Extralight, Source Sans Pro ExtraLight',
         projectDate: '04.2022',
         usedPrograms: ['/assets/programs/illustrator-icon.png'],
         endImage: '/assets/project-assets/kiril-endimg.jpg'

@@ -7,12 +7,14 @@
         </h1>
         <p innerHTML="{{ project.description}}"></p>
     </div>
-    <div class="content-pane customer-meta first-meta-row" *ngIf="project.customer || project.briefProblem || project.aim">
+    <div class="content-pane customer-meta first-meta-row"
+        *ngIf="project.customer || project.briefProblem || project.aim">
         <div class="customer-meta-container" *ngIf="project.customer">
             <p><strong>{{ project.customer.label }}:</strong> <span innerHTML="{{ project.customer.text }}"></span></p>
         </div>
         <div class="customer-meta-container" *ngIf="project.briefProblem">
-            <p><strong>{{ project.briefProblem.label }}:</strong> <span innerHTML="{{ project.briefProblem.text }}"></span></p>
+            <p><strong>{{ project.briefProblem.label }}:</strong> <span
+                    innerHTML="{{ project.briefProblem.text }}"></span></p>
         </div>
         <div class="customer-meta-container" *ngIf="project.aim">
             <p><strong>{{ project.aim.label }}:</strong> {{ project.aim.text }}</p>
@@ -44,10 +46,11 @@
         <div class="col">
             <div class="row">
                 <div>
-                    <strong>Шрифт:</strong><span class="font">{{ project.font }}</span>
+                    <strong>{{ 'projectText.usedFont' | translate}}:</strong><span class="font">{{ project.font
+                        }}</span>
                 </div>
                 <div>
-                    <strong style="float: left">Използвани програми:</strong>
+                    <strong style="float: left">{{ 'projectText.programsUsed' | translate}}:</strong>
                     <ng-container *ngFor="let iconUrl of project.usedPrograms">
                         <img class="program-icon" [src]="iconUrl">
                     </ng-container>
@@ -55,7 +58,7 @@
             </div>
             <div class="row">
                 <div>
-                    <strong>Дата на проекта:</strong><span>{{ project.projectDate }}</span>
+                    <strong>{{ 'projectText.projectDate' | translate}}:</strong><span>{{ project.projectDate }}</span>
                 </div>
             </div>
         </div>
