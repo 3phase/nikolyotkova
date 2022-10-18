@@ -75,7 +75,7 @@
 }
 
 .about-pic {
-    height: 250px;
+    height: 350px;
     margin: 0 auto;
     display: block;
 }
@@ -83,6 +83,7 @@
 @media (min-width: 821px) {
     .name-picture-container {
         flex-direction: row;
+        justify-content: space-between;
 
         & .about-pic {
             margin: 0;
