@@ -69,6 +69,31 @@
     margin-left: 0;
 }
 
+.name-picture-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-pic {
+    height: 250px;
+    margin: 0 auto;
+    display: block;
+}
+
+@media (min-width: 821px) {
+    .name-picture-container {
+        flex-direction: row;
+
+        & .about-pic {
+            margin: 0;
+        }
+
+        & div:nth-child(2) {
+            margin-left: 40px;
+        }
+    }
+}
+
 @media (min-width: 320px) {
 
     /* smartphones, iPhone, portrait 480x320 phones */
