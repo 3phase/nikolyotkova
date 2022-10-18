@@ -1,15 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { LANG, ProjectService } from '../project/project.service';
 
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.scss']
 })
-export class AboutComponent implements OnInit {
+export class AboutComponent {
 
-  constructor() { }
+  constructor(
+    private _projectService: ProjectService
+  ) { }
 
-  ngOnInit(): void {
+  public get showVideo(): boolean {
+    return this._projectService.currentLang === "bg" ? true : false;
   }
+
 
 }

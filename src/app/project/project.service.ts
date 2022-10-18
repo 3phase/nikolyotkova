@@ -5,7 +5,7 @@ import { IProject } from './project.component';
 import { PROJECTS_BG } from './projects-bg';
 import { PROJECTS_EN } from './projects-en';
 
-enum LANG {
+export enum LANG {
   BG,
   EN
 }
@@ -55,7 +55,12 @@ export class ProjectService {
     );
   }
 
+  public get currentLang(): string {
+    return this.translateService.currentLang;
+  }
+
   private get _getCulture(): LANG {
     return this.translateService.defaultLang === 'bg' ? LANG.BG : LANG.EN;
   }
+
 }
