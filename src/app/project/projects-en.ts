@@ -74,7 +74,7 @@ export const PROJECTS_EN: IProject[] = [
             text: 'The kindergarten\'s website has been disabled for several months.A new website design is needed to correspond visually with the brand identity of the business, as well as a new social media design with the creation of an Instagram account which is an appropriate channel to communicate with the target audience.'
         },
         feedback: {
-            label: 'Roject objective',
+            label: 'Project objective',
             text: 'Creating a new brand design that at the same time uses the current design elements, but also creating new ones that match the brand\'s mission.'
         },
         heroImg: '/assets/project-assets/social-network-design-hero.png',
