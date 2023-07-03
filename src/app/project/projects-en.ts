@@ -3,6 +3,34 @@ import { IProject } from "./project.component"
 export const PROJECTS_EN: IProject[] = [
     {
         id: 1,
+        title: "Private kindergarten<br>\"Land of the children\"",
+        description: "Client: \"Land of the children\" Ltd",
+        customer: {
+            label: 'The challenge',
+            text: ' The brand has already a visual identity that is incomplete. The logo is composed of too many elements, one of which is the original name of the business, which is no longer used - Kinderland. There are two channels of communication - a personal profile on Facebook and a Facebook business page. What is needed is a social media redesign, an Instagram account and an integrated brand design.'
+        },
+        briefProblem: {
+            label: 'Overview',
+            text: ' The kindergarten expands its scope of operation and therefore its target audience with whom it wants to communicate, so it needs a vision that corresponds with this audience.'
+        },
+        // challenge: {
+        //     label: 'The challenge',
+        //     text: 'The brand has already a visual identity that is incomplete. The logo is composed of too many elements, one of which is the original name of the business, which is no longer used - Kinderland. There are two channels of communication - a personal profile on Facebook and a Facebook business page. What is needed is a social media redesign, an Instagram account and an integrated brand design.'
+        // },
+        feedback: {
+            label: 'Feedback from the client',
+            text: '"The logo is simple, modern and made with beautiful colours. I like that now the kindergarten has a clear concept for all the promotional materials and social media channels, as we have made many improvements over the last few years and this design certainly suits our new look."'
+        },
+        heroImg: '/assets/project-assets/kinderland-hero.jpg',
+        logosDescImg: '/assets/project-assets/kinderland-logos.jpg',
+        colorPalette: ['#00baad', '#5fe0b7', '#aee8e9', '#ffeb68', '#ffac2a', '#e9506d', '#f06ab7'],
+        font: 'Montserrat',
+        projectDate: '05.2022',
+        usedPrograms: ['/assets/programs/illustrator-icon.png'],
+        endImage: '/assets/project-assets/kindergarten-endimg.jpg'
+    },
+    {
+        id: 2,
         title: "Landscaping by Kiril Y",
         description: '"Landscaping by Kiril Y" is a brand new business for afforestation, construction of irrigation systems and lawn maintenance',
         customer: {
@@ -29,34 +57,6 @@ export const PROJECTS_EN: IProject[] = [
         projectDate: '04.2022',
         usedPrograms: ['/assets/programs/illustrator-icon.png'],
         endImage: '/assets/project-assets/kiril-endimg.jpg'
-    },
-    {
-        id: 2,
-        title: "Private kindergarten<br>\"Land of the children\"",
-        description: "Client: \"Land of the children\" Ltd",
-        customer: {
-            label: 'The challenge',
-            text: ' The brand has already a visual identity that is incomplete. The logo is composed of too many elements, one of which is the original name of the business, which is no longer used - Kinderland. There are two channels of communication - a personal profile on Facebook and a Facebook business page. What is needed is a social media redesign, an Instagram account and an integrated brand design.'
-        },
-        briefProblem: {
-            label: 'Overview',
-            text: ' The kindergarten expands its scope of operation and therefore its target audience with whom it wants to communicate, so it needs a vision that corresponds with this audience.'
-        },
-        // challenge: {
-        //     label: 'The challenge',
-        //     text: 'The brand has already a visual identity that is incomplete. The logo is composed of too many elements, one of which is the original name of the business, which is no longer used - Kinderland. There are two channels of communication - a personal profile on Facebook and a Facebook business page. What is needed is a social media redesign, an Instagram account and an integrated brand design.'
-        // },
-        feedback: {
-            label: 'Feedback from the client',
-            text: '"The logo is simple, modern and made with beautiful colours. I like that now the kindergarten has a clear concept for all the promotional materials and social media channels, as we have made many improvements over the last few years and this design certainly suits our new look."'
-        },
-        heroImg: '/assets/project-assets/kinderland-hero.jpg',
-        logosDescImg: '/assets/project-assets/kinderland-logos.jpg',
-        colorPalette: ['#00baad', '#5fe0b7', '#aee8e9', '#ffeb68', '#ffac2a', '#e9506d', '#f06ab7'],
-        font: 'Montserrat',
-        projectDate: '05.2022',
-        usedPrograms: ['/assets/programs/illustrator-icon.png'],
-        endImage: '/assets/project-assets/kindergarten-endimg.jpg'
     },
     {
         id: 3,
