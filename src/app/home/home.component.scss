@@ -12,8 +12,7 @@ $transition-len: 0.35s;
     }
 
     &.video-preview.background-image-vp {
-        // background: url('/assets/bg.gif') center no-repeat;
-        background: url('/assets/background_new1.png') center no-repeat;
+        background: url('/assets/background_no_text.png') center no-repeat;
         background-size: cover;
     }
 
@@ -38,8 +37,7 @@ $transition-len: 0.35s;
 .logo-focus {
     display: flex;
     width: 100%;
-    position: absolute;
-    bottom: 35%;
+    height: 100%;
     align-items: center;
     justify-content: center;
     visibility: hidden;
@@ -53,30 +51,23 @@ $transition-len: 0.35s;
     }
 
     p {
-        font-size: 1.8em;
-        letter-spacing: 1px;
-        // font-weight: 600;
-        // color: #163741;
-        letter-spacing: 1px;
+        font-size: 4.7em;
+        letter-spacing: 2px;
         font-weight: bold;
         color: #f5f5f5;
     }
 
-    // .action-btn-square:after {
-    //     content: "";
-    //     position: absolute;
-    //     top: 0px;
-    //     left: 0px;
-    //     width: 0px;
-    //     height: 100%;
-    //     background: #0092bd;
-    //     transition: all 0.3s;
-    //     z-index: -1;
-    // }
+    .star-delimeter {
+        background-image: url(/assets/star-code.svg);
+        background-size: 30px 50px;
+        background-repeat: no-repeat;
+        width: 40px;
+        height: 45px;
+        display: inline-block;
+    }
 }
 
 .action-buttons {
-    margin-top: 150px;
     display: flex;
     justify-content: space-around;
     width: 30%;
