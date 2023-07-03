@@ -25,18 +25,21 @@ header {
 
     &.lang-switch {
         cursor: pointer;
-        display: relative;
+        position: relative;
     }
 }
 
 .about-url.lang-switch:hover::after {
+    display: block;
     content: "";
-    width: 8px;
-    height: 8px;
+    background-image: url(/assets/world.svg);
+    background-size: 15px 15px;
+    height: 15px;
+    width: 15px;
     position: absolute;
-    background-color: #fff;
-    bottom: 80px;
+    bottom: 15px;
     border-radius: 8px;
+    right: -15px;
 }
 
 @media (min-width: 961px) {
