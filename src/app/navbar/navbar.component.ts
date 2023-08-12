@@ -17,7 +17,7 @@ export class NavbarComponent implements OnInit {
 
   public changeLang(): void {
     if (this.translationService.currentLang === 'en') {
-      this.translationService.use('bg');
+      this.translationService.use('de');
     } else {
       this.translationService.use('en');
     }

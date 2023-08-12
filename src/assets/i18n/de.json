@@ -1,0 +1,27 @@
+{
+  "generic": {
+    "name": "Nikol Yotkova",
+    "occupation": "Grafikdesignerin"
+  },
+  "landing": {
+    "about": "Über mich",
+    "projectsRel": "Projekte",
+    "visualIdentity": "Visual identity",
+    "logoRedesign": "Logo design",
+    "socialMediaVisions": "Printed ads &<br>Editorials",
+    "interactiveCampaigns": "Illustrations &<br>Photography",
+    "printVisions": "Personal branding"
+  },
+  "navbar": {
+    "about": "Über mich",
+    "langSwitch": "EN"
+  },
+  "about": {
+    "paragraph": "Hallo, meine Name ist Nikol und ich bin ein Designliebhaber aus Bulgarien. Ich habe gerade meinen Bachelor-Abschluss in Werbung an der New Bulgarian University gemacht. Ich liebe es, Design mit einem Ziel zu verbinden und daher schöne Formen zu schaffen und mit Farben zu experimentieren. Ich weiß, wie schwer das sein kann, und genau deshalb wollte ich etwas Strategie und Konzept in einen ansonsten kreativen und intuitiven Bereich einbringen. Den Leuten einen visuellen Sinn zu vermitteln und sie dazu zu bringen, mit meinen Designs zu interagieren, ist etwas, das ich als meine Leidenschaft bezeichnen könnte.<br><br>Meine anderen Hobbys sind Reisen und die Erkundung neuer Orte. Ich liebe es, Schöpfungen der Natur und der Kunst zu beobachten - das ist es, was mich normalerweise motiviert.<br><br>Ich bin derzeit auf der Suche nach einer Stelle als Grafikdesigner. Wenn Sie also der Meinung sind, dass ich gut in Ihr Team passe, würde ich mich freuen, wenn wir uns über Linkedin austauschen könnten!"
+  },
+  "projectText": {
+    "usedFont": "Font",
+    "programsUsed": "Verwendete Software",
+    "projectDate": "Projektdatum"
+  }
+}

@@ -4,9 +4,10 @@ import { BehaviorSubject, map, Observable, of } from 'rxjs';
 import { IProject } from './project.component';
 import { PROJECTS_BG } from './projects-bg';
 import { PROJECTS_EN } from './projects-en';
+import { PROJECTS_DE } from './projects-de';
 
 export enum LANG {
-  BG,
+  DE,
   EN
 }
 
@@ -21,9 +22,9 @@ export class ProjectService {
     public translateService: TranslateService
   ) {
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
-      if (event.lang === 'bg') {
-        this._lang.next(LANG.BG);
-        localStorage.setItem('culture', 'bg');
+      if (event.lang === 'de') {
+        this._lang.next(LANG.DE);
+        localStorage.setItem('culture', 'de');
       } else {
         this._lang.next(LANG.EN);
         localStorage.setItem('culture', 'en');
@@ -39,8 +40,8 @@ export class ProjectService {
     return this._lang
       .pipe(
         map((lang: LANG) => {
-          if (lang === LANG.BG) {
-            return PROJECTS_BG;
+          if (lang === LANG.DE) {
+            return PROJECTS_DE;
           }
           return PROJECTS_EN;
         })
@@ -60,7 +61,7 @@ export class ProjectService {
   }
 
   private get _getCulture(): LANG {
-    return this.translateService.defaultLang === 'bg' ? LANG.BG : LANG.EN;
+    return this.translateService.defaultLang === 'de' ? LANG.DE : LANG.EN;
   }
 
 }
