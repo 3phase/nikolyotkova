@@ -2,8 +2,9 @@
 
 $projectOneColor: #06d7a0;
 $projectTwoColor: #aee8e9;
-$projectFourColor: #0091bd;
-$projectFiveColor: #90ebda;
+$projectThreeColor: $ny-greenish;
+$projectFourColor: $ny-light-blue;
+$projectFiveColor: $ny-dark-blue;
 $projectSixColor: #fc98be;
 $projectEightColor: #0091bd;
 
@@ -62,6 +63,12 @@ $projectEightColor: #0091bd;
     margin: 20px auto;
 }
 
+@media only screen and (min-width: 1560px) {
+    .hero-img {
+        width: 1080px !important;
+    }
+}
+
 .color-palette {
     width: 100%;
     height: 15vh;
@@ -115,7 +122,7 @@ $projectEightColor: #0091bd;
 
 .project-3 {
     .header-hero {
-        background-color: $ny-dark-blue;
+        background-color: $projectThreeColor;
     }
 
     #first-img {
@@ -173,10 +180,16 @@ $projectEightColor: #0091bd;
 
 .customer-meta {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
     width: 80%;
     text-align: left;
+
+    &>.col-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
 
     .customer-meta-container {
         padding: 0 10px;
@@ -226,7 +239,7 @@ $projectEightColor: #0091bd;
 
         .customer-meta-container {
             width: unset;
-            max-width: 40%;
+            max-width: 100%;
         }
     }
 

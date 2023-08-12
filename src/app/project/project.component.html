@@ -7,23 +7,28 @@
     </div>
     <div class="content-pane customer-meta first-meta-row"
         *ngIf="project.customer || project.briefProblem || project.aim">
-        <div class="customer-meta-container" *ngIf="project.customer">
-            <p><strong>{{ project.customer.label }}:</strong> <span innerHTML="{{ project.customer.text }}"></span></p>
+        <div class="col-wrapper">
+            <div class="customer-meta-container" *ngIf="project.customer">
+                <p><strong>{{ project.customer.label }}:</strong> <span innerHTML="{{ project.customer.text }}"></span>
+                </p>
+            </div>
+            <div class="customer-meta-container" *ngIf="project.aim">
+                <p><strong>{{ project.aim.label }}:</strong> {{ project.aim.text }}</p>
+            </div>
         </div>
-        <div class="customer-meta-container" *ngIf="project.briefProblem">
-            <p><strong>{{ project.briefProblem.label }}:</strong> <span
-                    innerHTML="{{ project.briefProblem.text }}"></span></p>
-        </div>
-        <div class="customer-meta-container" *ngIf="project.aim">
-            <p><strong>{{ project.aim.label }}:</strong> {{ project.aim.text }}</p>
-        </div>
-    </div>
-    <div class="content-pane customer-meta second-meta-row" *ngIf="project.challenge || project.feedback">
-        <div class="customer-meta-container" *ngIf="project.challenge">
-            <p><strong>{{ project.challenge.label }}:</strong> {{ project.challenge.text }}</p>
-        </div>
-        <div class="customer-meta-container" *ngIf="project.feedback">
-            <p><strong>{{ project.feedback.label }}:</strong> {{ project.feedback.text }}</p>
+        <div class="col-wrapper">
+            <!-- </div>
+        <div class="content-pane customer-meta second-meta-row" *ngIf="project.challenge || project.feedback"> -->
+            <div class="customer-meta-container" *ngIf="project.challenge">
+                <p><strong>{{ project.challenge.label }}:</strong> {{ project.challenge.text }}</p>
+            </div>
+            <div class="customer-meta-container" *ngIf="project.feedback">
+                <p><strong>{{ project.feedback.label }}:</strong> {{ project.feedback.text }}</p>
+            </div>
+            <div class="customer-meta-container" *ngIf="project.briefProblem">
+                <p><strong>{{ project.briefProblem.label }}:</strong> <span
+                        innerHTML="{{ project.briefProblem.text }}"></span></p>
+            </div>
         </div>
     </div>
     <img *ngIf="project.heroImg" [src]="project.heroImg" class="hero-img" id="first-img">
@@ -62,4 +67,6 @@
         </div>
     </div>
     <img *ngIf="project.endImage" [src]="project.endImage" class="hero-img" id="third-img">
+    <img *ngIf="project.fourthImage" [src]="project.fourthImage" class="hero-img" id="fourth-img">
+    <img *ngIf="project.fifthImage" [src]="project.fifthImage" class="hero-img" id="fifth-img">
 </div>

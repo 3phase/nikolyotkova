@@ -26,6 +26,8 @@ export interface IProject {
   usedPrograms?: string[];
   gallery?: string[];
   endImage?: string;
+  fourthImage?: string;
+  fifthImage?: string;
 }
 
 @Component({

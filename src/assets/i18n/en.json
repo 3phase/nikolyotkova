@@ -1,30 +1,27 @@
 {
-    "generic": {
-        "name": "Nikol Yotkova",
-        "occupation": "Graphic Designer"
-    },
-    "landing": {
-        "about": "About me",
-        "projectsRel": "Projects",
-        "visualIdentity": "Visual identity",
-        "logoRedesign": "Logo redesign",
-        "socialMediaVisions": "Social media and<br>website design",
-        "interactiveCampaigns": "Printed ads",
-        "printVisions": "Editorials",
-        "outdoorAdDesign": "Out of home<br>design",
-        "illustrationsAndPhotography": "Illustrations and<br>photography",
-        "personalBranding": "Personal<br>branding"
-    },
-    "navbar": {
-        "about": "About me",
-        "langSwitch": "БГ"
-    },
-    "about": {
-        "paragraph": "Hi, my name is Nikol and I'm a design lover from Bulgaria. I just got my Bachelor's degree in Advertising from New Bulgarian University. I love to relate design with purpose and hence to produce beautiful shapes and experiment with colors. I know how hard that might be and that's exactly why I wanted to put some strategy & concept in an otherwise creative and intuitional field. Bringing visual sense to people and making them want to interact with my designs is something I could describe as a passion of mine.<br><br>My other hobbies are travelling and exploring new places. I love to observe creations of both nature and art - that's what I usually get motivated of.<br><br>I'm currently seeking a graphic designer role, so if you think I'd be a good match for your team, I'd really like us to catch up on Linkedin!"
-    },
-    "projectText": {
-        "usedFont": "Font",
-        "programsUsed": "Used software",
-        "projectDate": "Date of the project"
-    }
+  "generic": {
+    "name": "Nikol Yotkova",
+    "occupation": "Graphic Designer"
+  },
+  "landing": {
+    "about": "About me",
+    "projectsRel": "Projects",
+    "visualIdentity": "Visual identity",
+    "logoRedesign": "Logo design",
+    "socialMediaVisions": "Printed ads &<br>Editorials",
+    "interactiveCampaigns": "Illustrations &<br>Photography",
+    "printVisions": "Personal Branding"
+  },
+  "navbar": {
+    "about": "About me",
+    "langSwitch": "БГ"
+  },
+  "about": {
+    "paragraph": "Hi, my name is Nikol and I'm a design lover from Bulgaria. I just got my Bachelor's degree in Advertising from New Bulgarian University. I love to relate design with purpose and hence to produce beautiful shapes and experiment with colors. I know how hard that might be and that's exactly why I wanted to put some strategy & concept in an otherwise creative and intuitional field. Bringing visual sense to people and making them want to interact with my designs is something I could describe as a passion of mine.<br><br>My other hobbies are travelling and exploring new places. I love to observe creations of both nature and art - that's what I usually get motivated of.<br><br>I'm currently seeking a graphic designer role, so if you think I'd be a good match for your team, I'd really like us to catch up on Linkedin!"
+  },
+  "projectText": {
+    "usedFont": "Font",
+    "programsUsed": "Used software",
+    "projectDate": "Date of the project"
+  }
 }
