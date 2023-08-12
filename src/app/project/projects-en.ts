@@ -38,7 +38,7 @@ export const PROJECTS_EN: IProject[] = [
     },
     {
         id: 2,
-        title: "Logo Design",
+        title: "Logo design",
         description: 'Creating logos for different customers, start-ups and university projects.',
         heroImg: '/assets/project-assets/kiril-hero.png',
         logosDescImg: '/assets/project-assets/kiril-logos.jpg',
@@ -47,7 +47,12 @@ export const PROJECTS_EN: IProject[] = [
         font: 'Fester Extralight, Source Sans Pro ExtraLight',
         projectDate: '04.2022',
         usedPrograms: ['/assets/programs/illustrator-icon.png'],
-        endImage: '/assets/project-assets/kiril-endimg.jpg'
+        endImage: '/assets/project-assets/kiril-endimg.jpg',
+        fourthImage: '/assets/project-assets/xplicity.png',
+        fifthImage: '/assets/project-assets/logo_sf_1.png',
+        sixthImage: '/assets/project-assets/logo_sf_2.png',
+        seventhImage: '/assets/project-assets/logo_sf_3.png',
+        eighthImage: '/assets/project-assets/logo_sf_4.png',
     },
     {
         id: 3,

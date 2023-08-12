@@ -28,6 +28,11 @@ export interface IProject {
   endImage?: string;
   fourthImage?: string;
   fifthImage?: string;
+  sixthImage?: string;
+  seventhImage?: string;
+  eighthImage?: string;
+  ninthImage?: string;
+  tenthImage?: string;
 }
 
 @Component({
