@@ -113,7 +113,12 @@ $transition-len: 0.35s;
     .logo-focus {
         p {
             font-size: 1.5em;
+            text-align: center;
         }
+    }
+
+    .action-buttons {
+        margin-top: 40px;
     }
 }
 
