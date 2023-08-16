@@ -60,7 +60,7 @@ $projectEightColor: #0091bd;
 .hero-img {
     width: 100%;
     display: block;
-    margin: 20px auto;
+    margin: 0 auto;
 }
 
 @media only screen and (min-width: 1920px) {
@@ -185,6 +185,7 @@ $projectEightColor: #0091bd;
     flex-wrap: wrap;
     width: 80%;
     text-align: left;
+    margin-bottom: 20px;
 
     &>.col-wrapper {
         display: flex;

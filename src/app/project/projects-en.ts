@@ -26,14 +26,14 @@ export const PROJECTS_EN: IProject[] = [
             label: 'The result',
             text: ' <a href="https://zemianadecata.com" target="_blank">https://zemianadecata.com</a>'
         },
-        heroImg: '/assets/project-assets/kinderland-hero.jpg',
+        heroImg: '/assets/project-assets/kinderland-hero_en.png',
         logosDescImg: '/assets/project-assets/kinderland-logos.jpg',
         colorPalette: ['#00baad', '#5fe0b7', '#aee8e9', '#ffeb68', '#ffac2a', '#e9506d', '#f06ab7'],
         font: 'Montserrat',
         projectDate: '05.2022',
         usedPrograms: ['/assets/programs/illustrator-icon.png'],
-        endImage: '/assets/project-assets/kindergarten-endimg.jpg',
-        fourthImage: '/assets/project-assets/social-network-design-hero.png',
+        endImage: '/assets/project-assets/kindergarten-endimg_en.png',
+        fourthImage: '/assets/project-assets/social-network-design-hero_en.png',
         fifthImage: '/assets/project-assets/social-network-design-endimg.jpg'
     },
     {
@@ -47,7 +47,7 @@ export const PROJECTS_EN: IProject[] = [
         font: 'Fester Extralight, Source Sans Pro ExtraLight',
         projectDate: '04.2022',
         usedPrograms: ['/assets/programs/illustrator-icon.png'],
-        endImage: '/assets/project-assets/kiril-endimg.jpg',
+        endImage: '/assets/project-assets/kiril-endimg_en.png',
         fourthImage: '/assets/project-assets/xplicity.png',
         fifthImage: '/assets/project-assets/logo_sf_1.png',
         sixthImage: '/assets/project-assets/logo_sf_2.png',
@@ -58,10 +58,10 @@ export const PROJECTS_EN: IProject[] = [
         id: 3,
         title: 'Printed Ads & Editorials',
         description: 'Student projects for advertising campaigns with objective awareness and creating a calendar for 2021.',
-        logosDescImg: '/assets/project-assets/print-hero.jpg',
+        logosDescImg: '/assets/project-assets/print-hero_en.png',
         heroImg: '/assets/project-assets/print-endimg.jpg',
-        endImage: '/assets/project-assets/external-ad-hero.jpg',
-        fourthImage: '/assets/project-assets/interactive-campaigns-hero.jpg'
+        endImage: '/assets/project-assets/external-ad-hero_en.png',
+        fourthImage: '/assets/project-assets/interactive-campaigns-hero_en.png'
     },
     {
         id: 4,
